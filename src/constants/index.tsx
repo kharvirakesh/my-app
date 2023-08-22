@@ -20,6 +20,71 @@ export const benefits = [
         svg: require('../../public/benifit_icon_4.svg'),
     },
 ]
-// 100+ Locations in 16 cities
-// Anywhere delivery
-// Privacy & freedom
+
+export const cameras = [
+    {
+        id: 1,
+        name: 'Nikon Z30 Camera',
+        svg1: require('../../public/GoPro_5_Inclusions__4__mfcI-yolN.webp'),
+        svg2: require('../../public/GoPro_5_Inclusions__3__q9hKEq2WZ.webp'),
+        actualPrice: 700,
+        discountPrice: 500,
+    },
+    {
+        id: 2,
+        name: 'Canon M50 Mark II',
+        svg1: require('../../public/dslr_4_5-L94tVLv.webp'),
+        svg2: require('../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp'),
+        actualPrice: 700,
+        discountPrice: 500,
+    },
+    {
+        id: 3,
+        name: 'Canon 1500D',
+        svg1: require('../../public/dslr_3_9sh_KCAXcM.webp'),
+        svg2: require('../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp'),
+        actualPrice: 700,
+        discountPrice: 500,
+    },    {
+        id: 4,
+        name: 'Canon M50 Mark II with Creator Kit',
+        svg1: require('../../public/canon_M50_creator_kit_on_rent_1_sharepal.webp'),
+        svg2: require('../../public/canon_M50_creator_kit_on_rent_sharepal.webp'),
+        actualPrice: 700,
+        discountPrice: 500,
+    }
+]
+
+export const camerasWeeklyOffers = [
+    {
+        id: 1,
+        name: 'Nikon Z30 Camera',
+        svg1: require('../../public/GoPro_5_Inclusions__4__mfcI-yolN.webp'),
+        svg2: require('../../public/GoPro_5_Inclusions__3__q9hKEq2WZ.webp'),
+        actualPrice: 4900,
+        discountPrice: 3000,
+    },
+    {
+        id: 2,
+        name: 'Canon M50 Mark II',
+        svg1: require('../../public/dslr_4_5-L94tVLv.webp'),
+        svg2: require('../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp'),
+        actualPrice: 4900,
+        discountPrice: 3000,
+    },
+    {
+        id: 3,
+        name: 'Canon 1500D',
+        svg1: require('../../public/dslr_3_9sh_KCAXcM.webp'),
+        svg2: require('../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp'),
+        actualPrice: 4900,
+        discountPrice: 3000,
+    },    {
+        id: 4,
+        name: 'Canon M50 Mark II with Creator Kit',
+        svg1: require('../../public/canon_M50_creator_kit_on_rent_1_sharepal.webp'),
+        svg2: require('../../public/canon_M50_creator_kit_on_rent_sharepal.webp'),
+        actualPrice: 4900,
+        discountPrice: 3000,
+    }
+]

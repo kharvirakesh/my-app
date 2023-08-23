@@ -8,6 +8,7 @@ import { CacheProvider } from '@emotion/react';
 import FeaturesAndBenefits from '@/components/FeaturesAndBenefits/features';
 import Carousel from '@/components/Carousel/Carousel';
 import Footer from '@/components/Footer.tsx/Footer';
+import Contact from '@/components/ContactUs/Contact';
 
 // Explicitly define the types for the props
 interface HomeProps {
@@ -32,7 +33,8 @@ export default function Home({ Component, emotionCache = clientSideEmotionCache,
         <ResponsiveAppBar />
         <FeaturesAndBenefits property1={undefined} />
         <Carousel property1={undefined} />
-        <Footer property1={undefined} />
+        <Contact />
+        <Footer />
       </ThemeProvider>
     </CacheProvider>
   );

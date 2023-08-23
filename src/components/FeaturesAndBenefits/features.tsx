@@ -9,7 +9,7 @@ interface IFeaturesAndBenefitsProps {
 
 const FeaturesAndBenefits = ({ property1 }: IFeaturesAndBenefitsProps) => {
   return (
-    <div>
+    <div className='mx-10'>
       <Typography className='flex justify-center font-bold text-3xl leading-10 my-9' color='primary'>
         Features & Benefits
       </Typography>

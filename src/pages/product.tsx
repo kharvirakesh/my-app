@@ -2,6 +2,9 @@ import React from 'react';
 import ResponsiveAppBar from '@/components/Appbar';
 import Footer from '@/components/Footer.tsx/Footer';
 import ProductDetails from '@/components/ProductDetails/ProductDetails';
+import svg1 from '../../public/dslr_3_9sh_KCAXcM.webp';
+import svg2 from '../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp';
+// dslr_4_5-L94tVLv
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -10,16 +13,15 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <div>
-            <ResponsiveAppBar />
             <ProductDetails
                 product={{
                     id: 0,
                     name: 'Nikon Z30 Camera',
                     images: [
-                        'https://ik.imagekit.io/faskf16pg/dslr-cameras/GoPro_5_Inclusions__4__mfcI-yolN.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661258329305',
-                        'https://ik.imagekit.io/faskf16pg/dslr-cameras/GoPro_5_Inclusions__3__q9hKEq2WZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661427540350'
+                        svg1,
+                        svg2,
                     ],
-                    description: 'Nikon Z30 Camera',
+                    description: 'Rent with confidence',
                     price: 500,
                     rating: 5
                 }} />

@@ -1,19 +1,11 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
+ import MenuIcon from '@mui/icons-material/Menu';
 import AdbIcon from '@mui/icons-material/Adb';
+import MenuItem from '@mui/material/MenuItem';
 import logo from '../../../public/MyChoize-logo.0a3a4fd4.svg';
 import Image from 'next/image'
+import { AppBar, Avatar, Box, Button, Container, Menu, Toolbar, Tooltip, Typography } from '@mui/material';
 
 const pages = ['Deals', 'Fleets', 'About Us', 'Contact Us', 'FAQ'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -38,8 +30,8 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static"
-        sx={{ background: 'transparent' }}
+        <AppBar position="sticky"
+        sx={{ background: '#fff' }}
         >
             <Container maxWidth="xl">
                 <Toolbar disableGutters>

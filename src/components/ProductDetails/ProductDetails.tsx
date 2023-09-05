@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Typography, Button, Grid, Stack } from '@mui/material';
+import { Typography, Button, Grid, Stack, TextField } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Image from 'next/image';
@@ -7,6 +7,11 @@ import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import PaymentIcon from '@mui/icons-material/Payment';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { TextFieldProps } from '@mui/material/TextField';
 
 interface IProductDetailsProps {
   product: {
@@ -23,8 +28,15 @@ const ProductDetails: React.FC<IProductDetailsProps> = ({ product }) => {
   const { name, images, description, price, rating } = product;
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
-  const handleImageClick = (index: number) => {
-    setSelectedImageIndex(index);
+  const [fromDate, setFromDate] = useState<Date | null>(null);
+  const [toDate, setToDate] = useState<Date | null>(null);
+
+  const handleFromDateChange = (date: Date | null) => {
+    setFromDate(date);
+  };
+
+  const handleToDateChange = (date: Date | null) => {
+    setToDate(date);
   };
 
   return (
@@ -36,7 +48,7 @@ const ProductDetails: React.FC<IProductDetailsProps> = ({ product }) => {
             <Carousel
               showThumbs={false}
               selectedItem={selectedImageIndex}
-              onClickItem={(index) => handleImageClick(index)}
+            // onClickItem={(index) => handleImageClick(index)}
             >
               {images?.map((image, index) => (
                 <div key={index}>
@@ -83,11 +95,30 @@ const ProductDetails: React.FC<IProductDetailsProps> = ({ product }) => {
             </Stack>
           </div>
 
-          <div>
-            <Button variant='contained' color='primary'>
+          {/* <div>
+            <Button variant='contained' color='primary' style={{ backgroundColor: '#1976D2' }}>
               Select Dates &nbsp; <CalendarMonthIcon />
             </Button>
-          </div>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <div>
+                <label>From Date:</label>
+                <DatePicker
+                  value={fromDate}
+                  onChange={handleFromDateChange}
+                  renderInput={(params: TextFieldProps) => <TextField {...params} />}
+                />
+              </div>
+              <div>
+                <label>To Date:</label>
+                <DatePicker
+                  value={fromDate}
+                  onChange={handleFromDateChange}
+                  renderInput={(params: TextFieldProps) => <TextField {...params} />}
+                />
+              </div>
+            </LocalizationProvider>
+
+          </div> */}
 
           <Typography variant="h6">
             Price: ${price}
@@ -95,7 +126,7 @@ const ProductDetails: React.FC<IProductDetailsProps> = ({ product }) => {
           <Typography variant="h6">
             Rating: {rating} / 5
           </Typography>
-          <Button variant="outlined" color="primary">
+          <Button variant='contained' color='primary'>
             Buy Now
           </Button>
         </Grid>

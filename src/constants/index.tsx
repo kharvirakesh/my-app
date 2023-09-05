@@ -29,6 +29,7 @@ export const cameras = [
         svg2: require('../../public/GoPro_5_Inclusions__3__q9hKEq2WZ.webp'),
         actualPrice: 700,
         discountPrice: 500,
+        discount: 28,
     },
     {
         id: 2,
@@ -37,6 +38,7 @@ export const cameras = [
         svg2: require('../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp'),
         actualPrice: 700,
         discountPrice: 500,
+        discount: 28,
     },
     {
         id: 3,
@@ -45,6 +47,7 @@ export const cameras = [
         svg2: require('../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp'),
         actualPrice: 700,
         discountPrice: 500,
+        discount: 28,
     },    {
         id: 4,
         name: 'Canon M50 Mark II with Creator Kit',
@@ -52,6 +55,7 @@ export const cameras = [
         svg2: require('../../public/canon_M50_creator_kit_on_rent_sharepal.webp'),
         actualPrice: 700,
         discountPrice: 500,
+        discount: 28,
     }
 ]
 
@@ -63,6 +67,7 @@ export const camerasWeeklyOffers = [
         svg2: require('../../public/GoPro_5_Inclusions__3__q9hKEq2WZ.webp'),
         actualPrice: 4900,
         discountPrice: 3000,
+        discount: 28,
     },
     {
         id: 2,
@@ -71,6 +76,7 @@ export const camerasWeeklyOffers = [
         svg2: require('../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp'),
         actualPrice: 4900,
         discountPrice: 3000,
+        discount: 28,
     },
     {
         id: 3,
@@ -79,6 +85,7 @@ export const camerasWeeklyOffers = [
         svg2: require('../../public/GoPro_5_Inclusions__2__eTX3CcqIyV.webp'),
         actualPrice: 4900,
         discountPrice: 3000,
+        discount: 28,
     },    {
         id: 4,
         name: 'Canon M50 Mark II with Creator Kit',
@@ -86,5 +93,6 @@ export const camerasWeeklyOffers = [
         svg2: require('../../public/canon_M50_creator_kit_on_rent_sharepal.webp'),
         actualPrice: 4900,
         discountPrice: 3000,
+        discount: 28,
     }
 ]
